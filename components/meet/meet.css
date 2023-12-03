@@ -1,0 +1,41 @@
+/* In your CSS stylesheet */
+.day-picker-container {
+  padding: 20px; /* Add padding to the calendar container */
+}
+
+/* Add gaps between all the dates */
+.DayPicker-Day {
+  margin: 2px;
+  padding: 10px;
+  background: #fff; /* Background color for all dates */
+  color: #000; /* Text color for all dates */
+  border: 1px solid #ccc; /* Border for all dates */
+  border-radius: 4px; /* Border radius for all dates */
+}
+
+/* Customize the selected date style */
+.DayPicker-Day--selected {
+  background: #00b0ff;
+  color: #fff;
+  border-radius: 50%;
+}
+
+/* You can add more custom styles as needed */
+
+/* For webkit-based browsers (Chrome, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px; /* width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: darkorange; /* color of the thumb */
+}
+
+/* For Firefox */
+.custom-scrollbar::-moz-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-moz-scrollbar-thumb {
+  background: #888;
+}
