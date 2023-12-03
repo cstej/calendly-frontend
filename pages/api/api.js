@@ -3,8 +3,8 @@ import { getCookie } from "cookies-next";
 
 let token;
 
-export const baseURL = "http://localhost:8000/api";
-export const clientUrl = "http://localhost:3000/";
+export const baseURL = process.env.BACKEND;
+export const clientUrl =process.env.FRONTEND;
 
 export const Imageapi = axios.create({
   withCredentials: true,
