@@ -1,10 +1,10 @@
 //
 import axios from "axios";
 // import socket from "./Socket"
-const baseURL = "http://localhost:8000/";
+const baseURL = process.env.BACKEND;
 
 const Axios = axios.create({
-  baseURL: "http://localhost:8000/",
+  baseURL: process.env.BACKEND,
 
   withCredentials: true,
 });
